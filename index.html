@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your HVAC Company - Comfort You Can Trust</title>
+    <meta name="description" content="Top-notch HVAC solutions tailored to your needs. Experience reliable service and expertise. Get a free estimate today!">
+    <meta name="keywords" content="HVAC, heating, air conditioning, installation, repair, maintenance">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="fixed top-0 left-0 right-0 z-20 pt-10 bg-transparent text-white py-4">
+        <div class="container mx-auto flex justify-between items-center w-3/5">
+            <div class="text-2xl font-bold">Your HVAC Company</div>
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <nav id="menu" class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-orange-500 transition duration-300">About Us</a>
+                <a href="#services" class="hover:text-orange-500 transition duration-300">Services</a>
+                <a href="#contact" class="hover:text-orange-500 transition duration-300">Contact Us</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="absolute right-0 mt-2 hidden w-1/4 bg-black bg-opacity-70 rounded-lg shadow-lg">
+            <nav class="flex flex-col space-y-2 p-4">
+                <a href="#about" class="hover:text-orange-500 transition duration-300">About Us</a>
+                <a href="#services" class="hover:text-orange-500 transition duration-300">Services</a>
+                <a href="#contact" class="hover:text-orange-500 transition duration-300">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="relative h-screen overflow-hidden">
+        <video class="video-background" autoplay muted loop>
+            <source src="/assets/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 container mx-auto flex flex-col items-center justify-center h-full text-center text-white">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Comfort You Can Trust</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl">Delivering top-notch HVAC solutions tailored to your needs. Experience reliable service and expertise.</p>
+            <div class="flex space-x-4">
+                <a href="#services" class="border border-white text-white py-3 px-6 rounded-lg transition duration-300 hover:bg-white hover:text-blue-800">Get a Free Estimate</a>
+                <a href="#contact" class="border border-white text-white py-3 px-6 rounded-lg transition duration-300 hover:bg-white hover:text-blue-800">Contact Us</a>
+            </div>
+            <div class="mt-8">
+                <p class="text-sm">Licensed & Insured | Satisfaction Guaranteed</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto flex flex-col items-center">
+            <div class="flex flex-col md:flex-row justify-center items-center w-3/5">
+                <!-- Text Box 1 -->
+                <div class="md:w-1/2 p-4 flex items-center justify-start">
+                    <div>
+                        <h2 class="text-4xl font-bold mb-4 text-blue-800">About Us</h2>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                            At Your HVAC Company, we provide reliable heating and cooling solutions tailored to your needs. 
+                            Our skilled team ensures every service meets the highest standards of quality and customer satisfaction.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            With years of experience in the industry, we prioritize your comfort and strive to exceed your expectations. 
+                            From installations to maintenance, our dedicated professionals are here to serve you.
+                        </p>
+                    </div>
+                </div>
+        
+                <!-- Image Box 1 -->
+                <div class="md:w-1/2 p-4 flex items-center justify-center">
+                    <img src="/assets/4.png" alt="HVAC Team" class="w-full h-auto object-cover rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                </div>
+            </div>
+        
+            <div class="flex flex-col md:flex-row justify-center items-center w-3/5 mt-12">
+                <!-- Image Box 2 -->
+                <div class="md:w-1/2 p-4 flex items-center justify-center">
+                    <img src="/assets/5.png" alt="Comfort Solutions" class="w-full h-auto object-cover rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                </div>
+        
+                <!-- Text Box 2 -->
+                <div class="md:w-1/2 p-4 flex items-center justify-start">
+                    <div>
+                        <h2 class="text-4xl font-bold mb-4 text-blue-800">Our Mission</h2>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                            We are committed to delivering exceptional HVAC services that enhance your comfort while being environmentally responsible. 
+                            Our goal is to ensure your systems run efficiently year-round.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            We believe in transparency, integrity, and building long-lasting relationships with our clients. 
+                            Your comfort is our priority, and we aim to provide services that not only meet but exceed your expectations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-blue-800 mb-10">Our Services</h2>
+            <div class="flex flex-wrap justify-center">
+                <!-- Service Box 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col items-center transition-transform transform hover:scale-105 mx-2 w-1/4 md:w-1/5 mx-10">
+                    <div class="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mb-4">
+                        <img src="/assets/icon1.png" alt="Heating Solutions" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Heating Solutions</h3>
+                    <p class="text-gray-700 text-center">Reliable heating installations and repairs to keep your home warm and comfortable.</p>
+                </div>
+    
+                <!-- Service Box 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col items-center transition-transform transform hover:scale-105 mx-2 w-1/4 md:w-1/5 mx-10">
+                    <div class="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mb-4">
+                        <img src="/assets/icon2.png" alt="Air Conditioning" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Air Conditioning</h3>
+                    <p class="text-gray-700 text-center">Expert AC installation and maintenance for optimal cooling in the summer months.</p>
+                </div>
+    
+                <!-- Service Box 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col items-center transition-transform transform hover:scale-105 mx-2 w-1/4 md:w-1/5 mx-10">
+                    <div class="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mb-4">
+                        <img src="/assets/icon3.png" alt="Maintenance Plans" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Maintenance Plans</h3>
+                    <p class="text-gray-700 text-center">Regular maintenance to ensure your HVAC system runs efficiently year-round.</p>
+                </div>
+            </div>
+    
+            <!-- Add Gap Below the First Three Boxes -->
+            <div class="mt-12"></div>
+    
+            <div class="flex flex-wrap justify-center">
+                <!-- Service Box 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col items-center transition-transform transform hover:scale-105 mx-2 w-1/4 md:w-1/5 mx-10">
+                    <div class="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mb-4">
+                        <img src="/assets/icon4.png" alt="Indoor Air Quality" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Indoor Air Quality</h3>
+                    <p class="text-gray-700 text-center">Solutions to improve the air quality in your home for a healthier environment.</p>
+                </div>
+    
+                <!-- Service Box 5 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col items-center transition-transform transform hover:scale-105 mx-2 w-1/4 md:w-1/5 mx-10">
+                    <div class="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mb-4">
+                        <img src="/assets/icon5.png" alt="Energy Efficiency" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Energy Efficiency</h3>
+                    <p class="text-gray-700 text-center">Upgrade options to enhance energy efficiency and lower your utility bills.</p>
+                </div>
+    
+                <!-- Service Box 6 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6 flex flex-col items-center transition-transform transform hover:scale-105 mx-2 w-1/4 md:w-1/5 mx-10">
+                    <div class="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center mb-4">
+                        <img src="/assets/icon6.png" alt="Emergency Repairs" class="w-16 h-16">
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-2">Emergency Repairs</h3>
+                    <p class="text-gray-700 text-center">24/7 emergency repair services to ensure your comfort at any time.</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-24"></div>
+        <section id="reviews" class="py-20 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-blue-800 mb-10">What Our Clients Say</h2>
+                <div class="flex mt-10 justify-center space-x-8">
+                    <!-- Review 1 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center w-80">
+                        <img src="/assets/client1.png" alt="Client 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                        <p class="text-gray-700 mb-4">"Your HVAC Company did an excellent job! The team was professional and knowledgeable."</p>
+                        <h4 class="font-bold">John Doe</h4>
+                        <p class="text-sm text-gray-500">Homeowner</p>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center w-80">
+                        <img src="/assets/client2.png" alt="Client 2" class="w-24 h-24 rounded-full mx-auto mb-4">
+                        <p class="text-gray-700 mb-4">"Excellent service and support! Highly recommended."</p>
+                        <h4 class="font-bold">Jane Smith</h4>
+                        <p class="text-sm text-gray-500">Business Owner</p>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center w-80">
+                        <img src="/assets/client3.png" alt="Client 3" class="w-24 h-24 rounded-full mx-auto mb-4">
+                        <p class="text-gray-700 mb-4">"Fast response and great customer service!"</p>
+                        <h4 class="font-bold">Mike Johnson</h4>
+                        <p class="text-sm text-gray-500">Contractor</p>
+                    </div>
+                    <!-- Add more reviews as needed -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center w-80">
+                        <img src="/assets/client1.png" alt="Client 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                        <p class="text-gray-700 mb-4">"Your HVAC Company did an excellent job! The team was professional and knowledgeable."</p>
+                        <h4 class="font-bold">John Doe</h4>
+                        <p class="text-sm text-gray-500">Homeowner</p>
+                    </div>
+                    <!-- Review 2 -->
+                    
+                    </div> 
+                </div>
+            </div>
+        </section>
+    
+        
+    <div class="container mx-auto py-20">
+        <h1 class="text-3xl font-bold text-center">Hello</h1>
+        <p class="text-center mt-4">This is some additional content that appears below the hero section.</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
